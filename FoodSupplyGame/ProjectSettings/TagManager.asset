@@ -9,6 +9,7 @@ TagManager:
   - LongCornerTag
   - SideAxisTag
   - FoodTag
+  - GroundCheckTag
   layers:
   - Default
   - TransparentFX
