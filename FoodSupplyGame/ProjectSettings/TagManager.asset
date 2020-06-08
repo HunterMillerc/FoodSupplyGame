@@ -8,6 +8,7 @@ TagManager:
   - SkyTag
   - LongCornerTag
   - SideAxisTag
+  - FoodTag
   layers:
   - Default
   - TransparentFX
