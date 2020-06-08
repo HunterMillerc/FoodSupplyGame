@@ -17,8 +17,6 @@ public class MyPlayerMovement : MonoBehaviour
         horizontalKeyMove = Input.GetAxis("HorizontalKey");
         verticalKeyMove = Input.GetAxis("VerticalKey");
 
-        if (isPlayerVertical)
-        {
             if (horizontalKeyMove == 1)
             {
                 direction = new Vector3(3, 0, 0);
@@ -35,27 +33,6 @@ public class MyPlayerMovement : MonoBehaviour
             {
                 direction = new Vector3(0, 0, -3);
             }
-        }
-
-        if (!isPlayerVertical)
-        {
-            if (horizontalKeyMove == 1) 
-            {
-                direction = new Vector3(2f, 0, 0);
-            }
-            if (horizontalKeyMove == -1)
-            {
-                direction = new Vector3(-2f, 0, 0);
-            }
-            if (verticalKeyMove == 1)
-            {
-                direction = new Vector3(0, 0, 2f);
-            }
-            if (verticalKeyMove == -1)
-            {
-                direction = new Vector3(0, 0, -2f);
-            }
-        }
 
         if (direction != Vector3.zero && !isTumbling)
         {
@@ -76,6 +53,14 @@ public class MyPlayerMovement : MonoBehaviour
 
     IEnumerator Tumble(Vector3 direction)
     {
+        if (transform.position.y == 7)
+        {
+            isPlayerVertical = false;
+        }
+        else if (transform.position.y != 7)
+        {
+            isPlayerVertical = true;
+        }
         isTumbling = true;
 
         var rotAxis = Vector3.Cross(Vector3.up, direction);
@@ -87,7 +72,6 @@ public class MyPlayerMovement : MonoBehaviour
         var startPosition = transform.position;
 
         sideTumble = isRollingSideways(pivot);
-        Debug.Log(pivot);
 
         var rotSpeed = 90.0f / tumblingDuration;
         var t = 0.0f;
@@ -103,25 +87,33 @@ public class MyPlayerMovement : MonoBehaviour
             else
             {
                 transform.rotation = endRotation;
-                if (sideTumble && !isPlayerVertical)
+                if (isPlayerVertical)
                 {
-                    Debug.Log(sideTumble);
-                    transform.position = new Vector3(startPosition.x, startPosition.y, startPosition.z) + direction;
-                }
-                if (sideTumble && isPlayerVertical)
-                {
-                    Debug.Log(sideTumble);
-                    transform.position += direction;
-                }
-                else if (!sideTumble && !isPlayerVertical)
-                {
-                    Debug.Log(sideTumble);
-                    transform.position = new Vector3(startPosition.x, startPosition.y, startPosition.z) + direction;
-                }
-                else if (!sideTumble && isPlayerVertical)
-                {
-                    Debug.Log(sideTumble);
                     transform.position = new Vector3(startPosition.x, startPosition.y - 1, startPosition.z) + direction;
+                }
+                else if (!isPlayerVertical && sideTumble)
+                {
+                    if (direction == new Vector3(3,0,0))
+                    {
+                        direction = new Vector3(2, 0, 0);
+                    }
+                    if (direction == new Vector3(-3,0,0))
+                    {
+                        direction = new Vector3(-2, 0, 0);
+                    }
+                    if (direction == new Vector3(0,0,3))
+                    {
+                        direction = new Vector3(0, 0, 2);
+                    }
+                    if (direction == new Vector3(0,0,-3))
+                    {
+                        direction = new Vector3(0, 0, -2);
+                    }
+                    transform.position = new Vector3(startPosition.x, startPosition.y, startPosition.z) + direction;
+                }
+                else if (!isPlayerVertical && !sideTumble)
+                {
+                    transform.position = new Vector3(startPosition.x, startPosition.y + 1, startPosition.z) + direction;
                 }
             }
         }
