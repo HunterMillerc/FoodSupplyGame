@@ -133,6 +133,7 @@ GameObject:
   - component: {fileID: 22529018}
   - component: {fileID: 22529017}
   - component: {fileID: 22529016}
+  - component: {fileID: 22529020}
   m_Layer: 0
   m_Name: FinishCube
   m_TagString: Finish
@@ -208,12 +209,26 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 22529015}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6, y: 5, z: -0.1}
-  m_LocalScale: {x: 2.2, y: 2, z: 2.2}
+  m_LocalPosition: {x: 6, y: 5, z: 0}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &22529020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 22529015}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86e886e7f7dd3a74fbc3b5e973fef28d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pizzaScript: {fileID: 2349332302700862730}
+  VerticalFinishCollider: {fileID: 412318941}
 --- !u!1001 &58951956
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -555,6 +570,50 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 662c6d7d86cdecc4d97ccec3f3ae59e8, type: 3}
+--- !u!1 &412318940
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 412318942}
+  - component: {fileID: 412318941}
+  m_Layer: 0
+  m_Name: VerticalFinishCollider
+  m_TagString: VerticalFinishColliderTag
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &412318941
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 412318940}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &412318942
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 412318940}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 3929332231113762969}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &469570532
 GameObject:
   m_ObjectHideFlags: 0
@@ -2735,7 +2794,6 @@ GameObject:
   - component: {fileID: 62086124957440653}
   - component: {fileID: 62086124957440654}
   - component: {fileID: 62086124957440655}
-  - component: {fileID: 62086124957440656}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -2821,19 +2879,6 @@ MonoBehaviour:
     Used to check if pivot point on cube is same as one of these. If so, player y
     position is same as before. Else (if player is vertical) player y position is
     -1 to keep it on the ground.'
---- !u!114 &62086124957440656
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 62086124957440650}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d61c661c6ad1fc346acddff67255821a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameManager: {fileID: 1289270407}
 --- !u!33 &68557974893417862
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -14502,6 +14547,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FoodCollider: {fileID: 62086124957440652}
   Pizza: {fileID: 2349332302700862727}
+  foodPickedUp: 0
 --- !u!4 &2355488464714997141
 Transform:
   m_ObjectHideFlags: 0
@@ -21420,6 +21466,7 @@ Transform:
   - {fileID: 1125048987}
   - {fileID: 469570533}
   - {fileID: 1719275877}
+  - {fileID: 412318942}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 270}

@@ -7,6 +7,8 @@ public class PizzaHit : MonoBehaviour
     public BoxCollider FoodCollider;
     public GameObject Pizza;
 
+    public bool foodPickedUp = false;
+
     private void Start()
     {
         FoodCollider = GameObject.FindGameObjectWithTag("Player").GetComponent<BoxCollider>();
@@ -17,6 +19,7 @@ public class PizzaHit : MonoBehaviour
     {
         if(other == FoodCollider)
         {
+            foodPickedUp = true;
             Destroy(Pizza);
         }
     }

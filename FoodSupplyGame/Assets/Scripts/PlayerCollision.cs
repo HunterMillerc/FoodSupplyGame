@@ -4,7 +4,4 @@ using UnityEngine;
 
 public class PlayerCollision : MonoBehaviour
 {
-    public GameManager gameManager;
-    bool isFoodPicked;
-
 }

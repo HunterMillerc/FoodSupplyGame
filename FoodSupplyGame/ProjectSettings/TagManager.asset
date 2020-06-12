@@ -11,6 +11,7 @@ TagManager:
   - FoodTag
   - GroundCheckTag
   - PlayerOutsideGroundTag
+  - VerticalFinishColliderTag
   layers:
   - Default
   - TransparentFX
