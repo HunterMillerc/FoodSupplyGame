@@ -1,0 +1,28 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class LevelEdgeDetection : MonoBehaviour
+{
+    public MyPlayerMovement playerMovement;
+    public GameObject player;
+    private Rigidbody playerRb;
+    public BoxCollider playerCollider;
+
+    private void Start()
+    {
+        playerCollider = GameObject.FindGameObjectWithTag("PlayerOutsideGroundTag").GetComponent<BoxCollider>();
+        player = GameObject.FindGameObjectWithTag("Player");
+        playerRb = player.GetComponent<Rigidbody>();
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other == playerCollider)
+        {
+            playerRb.isKinematic = false;
+            playerRb.useGravity = true;
+            playerMovement.enabled = false;
+        }
+    }
+}

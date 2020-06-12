@@ -5,6 +5,8 @@ using UnityEngine;
 public class MyPlayerMovement : MonoBehaviour
 {
     public float tumblingDuration = 0.2f;
+    public float TimeToWait = 0.5f;
+    private float done = 0.0f;
 
     public void Start()
     {
@@ -17,22 +19,27 @@ public class MyPlayerMovement : MonoBehaviour
         horizontalKeyMove = Input.GetAxis("HorizontalKey");
         verticalKeyMove = Input.GetAxis("VerticalKey");
 
+        if(Time.time > done)
+        {
+            done = Time.time + TimeToWait;
             if (horizontalKeyMove == 1)
             {
                 direction = new Vector3(3, 0, 0);
             }
-            if(horizontalKeyMove == -1)
+            if (horizontalKeyMove == -1)
             {
                 direction = new Vector3(-3, 0, 0);
             }
-            if(verticalKeyMove == 1)
+            if (verticalKeyMove == 1)
             {
                 direction = new Vector3(0, 0, 3);
             }
-            if(verticalKeyMove == -1)
+            if (verticalKeyMove == -1)
             {
                 direction = new Vector3(0, 0, -3);
             }
+        }
+
 
         if (direction != Vector3.zero && !isTumbling)
         {
@@ -43,13 +50,12 @@ public class MyPlayerMovement : MonoBehaviour
     float verticalKeyMove;
 
     public bool isPlayerVertical;
-    Collision collision;
 
     bool isTumbling = false;
     bool sideTumble = false;
 
     //Use these to check if game object is being rolled on its long side
-    public GameObject[] sideAxises;
+    private GameObject[] sideAxises;
 
     IEnumerator Tumble(Vector3 direction)
     {
@@ -117,7 +123,6 @@ public class MyPlayerMovement : MonoBehaviour
                 }
             }
         }
-
         isTumbling = false;
     }
 
