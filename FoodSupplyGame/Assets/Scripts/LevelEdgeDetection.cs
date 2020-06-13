@@ -23,7 +23,7 @@ public class LevelEdgeDetection : MonoBehaviour
             playerRb.isKinematic = false;
             playerRb.useGravity = true;
             playerMovement.enabled = false;
-            player.transform.position = Vector3.Lerp(player.transform.position, transform.position, Time.deltaTime * 1.9f);
+            player.transform.position = Vector3.Lerp(player.transform.position, transform.position, Time.deltaTime * 2.0f);
         }
     }
 }

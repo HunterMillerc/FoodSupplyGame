@@ -6,6 +6,8 @@ public class FinishCubeCheck : MonoBehaviour
 {
     public PizzaHit pizzaScript;
     public BoxCollider VerticalFinishCollider;
+    public MyPlayerMovement playerMovement;
+    public GameManager gameManager;
 
     private void Start()
     {
@@ -22,7 +24,8 @@ public class FinishCubeCheck : MonoBehaviour
             }
             else
             {
-                Debug.Log("Level won!");
+                gameManager.CompleteLevel();
+                playerMovement.enabled = false;
             }
         }
     }

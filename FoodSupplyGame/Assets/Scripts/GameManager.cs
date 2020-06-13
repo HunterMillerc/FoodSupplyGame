@@ -4,14 +4,8 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-
     public void CompleteLevel()
     {
         Debug.Log("level won!");
-    }
-
-    public void PlayerOutsideGround()
-    {
-        
     }
 }
