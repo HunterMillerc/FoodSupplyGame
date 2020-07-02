@@ -8,6 +8,8 @@ public class MainMenu : MonoBehaviour
 {
     public void PlayGame()
     {
+        PauseMenu.GamePaused = false;
+        Time.timeScale = 1f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 

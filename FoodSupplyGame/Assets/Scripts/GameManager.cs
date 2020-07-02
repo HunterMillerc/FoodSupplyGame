@@ -5,9 +5,15 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public GameObject LevelComplete;
+    public GameObject LevelFailed;
 
     public void CompleteLevel()
     {
         LevelComplete.SetActive(true);
+    }
+
+    public void FailedLevel()
+    {
+        LevelFailed.SetActive(true);
     }
 }

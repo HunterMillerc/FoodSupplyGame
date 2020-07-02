@@ -8,6 +8,7 @@ public class LevelEdgeDetection : MonoBehaviour
     public GameObject player;
     private Rigidbody playerRb;
     public BoxCollider playerCollider;
+    public GameManager GameManager;
 
     private void Start()
     {
@@ -24,6 +25,7 @@ public class LevelEdgeDetection : MonoBehaviour
             playerRb.useGravity = true;
             playerMovement.enabled = false;
             player.transform.position = Vector3.Lerp(player.transform.position, transform.position, Time.deltaTime * 2.0f);
+            GameManager.FailedLevel();
         }
     }
 }
