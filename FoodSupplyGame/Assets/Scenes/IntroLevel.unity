@@ -543,6 +543,12 @@ BoxCollider:
     type: 3}
   m_PrefabInstance: {fileID: 1281140485889636022}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &453032934 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1545247871964812595, guid: 5421f65b8b7634e41be12c4c62bc2ab1,
+    type: 3}
+  m_PrefabInstance: {fileID: 669400333}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &473799608
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1195,6 +1201,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a5c8e0315943ea48aac98efd5d7a191, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  LevelComplete: {fileID: 453032934}
 --- !u!4 &1289270408
 Transform:
   m_ObjectHideFlags: 0

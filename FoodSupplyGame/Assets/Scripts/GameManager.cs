@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    public GameObject LevelComplete;
+
     public void CompleteLevel()
     {
-        Debug.Log("level won!");
+        LevelComplete.SetActive(true);
     }
 }
