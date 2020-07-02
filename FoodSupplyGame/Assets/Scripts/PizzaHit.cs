@@ -8,11 +8,15 @@ public class PizzaHit : MonoBehaviour
     public GameObject Pizza;
 
     public bool foodPickedUp = false;
+    public GameObject PizzaNotCollected;
+    public GameObject PizzaCollected;
 
     private void Start()
     {
         FoodCollider = GameObject.FindGameObjectWithTag("Player").GetComponent<BoxCollider>();
         Pizza = GameObject.FindGameObjectWithTag("FoodTag");
+        PizzaNotCollected.SetActive(true);
+        PizzaCollected.SetActive(false);
     }
 
     private void OnTriggerEnter(Collider other)
@@ -21,6 +25,8 @@ public class PizzaHit : MonoBehaviour
         {
             foodPickedUp = true;
             Destroy(Pizza);
+            PizzaNotCollected.SetActive(false);
+            PizzaCollected.SetActive(true);
         }
     }
 }
