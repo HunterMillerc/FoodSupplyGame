@@ -12,6 +12,7 @@ TagManager:
   - GroundCheckTag
   - PlayerOutsideGroundTag
   - VerticalFinishColliderTag
+  - MusicTag
   layers:
   - Default
   - TransparentFX
