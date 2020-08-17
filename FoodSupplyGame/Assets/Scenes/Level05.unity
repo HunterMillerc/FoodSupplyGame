@@ -148,6 +148,11 @@ PrefabInstance:
       propertyPath: GameManager
       value: 
       objectReference: {fileID: 1289270407}
+    - target: {fileID: 2496886839966412049, guid: ba797213863c833439b4ac44f5177b65,
+        type: 3}
+      propertyPath: verticalFinishCollider
+      value: 
+      objectReference: {fileID: 412318941}
     - target: {fileID: 2496886839966412050, guid: ba797213863c833439b4ac44f5177b65,
         type: 3}
       propertyPath: m_Name
@@ -511,6 +516,11 @@ PrefabInstance:
       propertyPath: GameManager
       value: 
       objectReference: {fileID: 1289270407}
+    - target: {fileID: 2496886839966412049, guid: ba797213863c833439b4ac44f5177b65,
+        type: 3}
+      propertyPath: verticalFinishCollider
+      value: 
+      objectReference: {fileID: 412318941}
     - target: {fileID: 2496886839966412050, guid: ba797213863c833439b4ac44f5177b65,
         type: 3}
       propertyPath: m_Name
@@ -1363,6 +1373,11 @@ PrefabInstance:
       propertyPath: GameManager
       value: 
       objectReference: {fileID: 1289270407}
+    - target: {fileID: 2496886839966412049, guid: ba797213863c833439b4ac44f5177b65,
+        type: 3}
+      propertyPath: verticalFinishCollider
+      value: 
+      objectReference: {fileID: 412318941}
     - target: {fileID: 2496886839966412050, guid: ba797213863c833439b4ac44f5177b65,
         type: 3}
       propertyPath: m_Name
@@ -1547,6 +1562,11 @@ PrefabInstance:
       propertyPath: GameManager
       value: 
       objectReference: {fileID: 1289270407}
+    - target: {fileID: 2496886839966412049, guid: ba797213863c833439b4ac44f5177b65,
+        type: 3}
+      propertyPath: verticalFinishCollider
+      value: 
+      objectReference: {fileID: 412318941}
     - target: {fileID: 2496886839966412050, guid: ba797213863c833439b4ac44f5177b65,
         type: 3}
       propertyPath: m_Name
@@ -1757,6 +1777,11 @@ PrefabInstance:
       propertyPath: GameManager
       value: 
       objectReference: {fileID: 1289270407}
+    - target: {fileID: 2496886839966412049, guid: ba797213863c833439b4ac44f5177b65,
+        type: 3}
+      propertyPath: verticalFinishCollider
+      value: 
+      objectReference: {fileID: 412318941}
     - target: {fileID: 2496886839966412050, guid: ba797213863c833439b4ac44f5177b65,
         type: 3}
       propertyPath: m_Name
@@ -1967,6 +1992,11 @@ PrefabInstance:
       propertyPath: GameManager
       value: 
       objectReference: {fileID: 1289270407}
+    - target: {fileID: 2496886839966412049, guid: ba797213863c833439b4ac44f5177b65,
+        type: 3}
+      propertyPath: verticalFinishCollider
+      value: 
+      objectReference: {fileID: 412318941}
     - target: {fileID: 2496886839966412050, guid: ba797213863c833439b4ac44f5177b65,
         type: 3}
       propertyPath: m_Name
@@ -3016,6 +3046,11 @@ PrefabInstance:
       propertyPath: GameManager
       value: 
       objectReference: {fileID: 1289270407}
+    - target: {fileID: 2496886839966412049, guid: ba797213863c833439b4ac44f5177b65,
+        type: 3}
+      propertyPath: verticalFinishCollider
+      value: 
+      objectReference: {fileID: 412318941}
     - target: {fileID: 2496886839966412050, guid: ba797213863c833439b4ac44f5177b65,
         type: 3}
       propertyPath: m_Name
@@ -3110,6 +3145,11 @@ PrefabInstance:
       propertyPath: GameManager
       value: 
       objectReference: {fileID: 1289270407}
+    - target: {fileID: 2496886839966412049, guid: ba797213863c833439b4ac44f5177b65,
+        type: 3}
+      propertyPath: verticalFinishCollider
+      value: 
+      objectReference: {fileID: 412318941}
     - target: {fileID: 2496886839966412050, guid: ba797213863c833439b4ac44f5177b65,
         type: 3}
       propertyPath: m_Name
@@ -4202,6 +4242,11 @@ PrefabInstance:
       propertyPath: GameManager
       value: 
       objectReference: {fileID: 1289270407}
+    - target: {fileID: 2496886839966412049, guid: ba797213863c833439b4ac44f5177b65,
+        type: 3}
+      propertyPath: verticalFinishCollider
+      value: 
+      objectReference: {fileID: 412318941}
     - target: {fileID: 2496886839966412050, guid: ba797213863c833439b4ac44f5177b65,
         type: 3}
       propertyPath: m_Name
@@ -4686,6 +4731,11 @@ PrefabInstance:
       propertyPath: GameManager
       value: 
       objectReference: {fileID: 1289270407}
+    - target: {fileID: 2496886839966412049, guid: ba797213863c833439b4ac44f5177b65,
+        type: 3}
+      propertyPath: verticalFinishCollider
+      value: 
+      objectReference: {fileID: 412318941}
     - target: {fileID: 2496886839966412050, guid: ba797213863c833439b4ac44f5177b65,
         type: 3}
       propertyPath: m_Name
@@ -5086,6 +5136,11 @@ PrefabInstance:
       propertyPath: GameManager
       value: 
       objectReference: {fileID: 1289270407}
+    - target: {fileID: 2496886839966412049, guid: ba797213863c833439b4ac44f5177b65,
+        type: 3}
+      propertyPath: verticalFinishCollider
+      value: 
+      objectReference: {fileID: 412318941}
     - target: {fileID: 2496886839966412050, guid: ba797213863c833439b4ac44f5177b65,
         type: 3}
       propertyPath: m_Name
@@ -5185,6 +5240,11 @@ PrefabInstance:
       propertyPath: GameManager
       value: 
       objectReference: {fileID: 1289270407}
+    - target: {fileID: 2496886839966412049, guid: ba797213863c833439b4ac44f5177b65,
+        type: 3}
+      propertyPath: verticalFinishCollider
+      value: 
+      objectReference: {fileID: 412318941}
     - target: {fileID: 2496886839966412050, guid: ba797213863c833439b4ac44f5177b65,
         type: 3}
       propertyPath: m_Name
@@ -6056,6 +6116,11 @@ PrefabInstance:
       propertyPath: GameManager
       value: 
       objectReference: {fileID: 1289270407}
+    - target: {fileID: 2496886839966412049, guid: ba797213863c833439b4ac44f5177b65,
+        type: 3}
+      propertyPath: verticalFinishCollider
+      value: 
+      objectReference: {fileID: 412318941}
     - target: {fileID: 2496886839966412050, guid: ba797213863c833439b4ac44f5177b65,
         type: 3}
       propertyPath: m_Name
@@ -6439,6 +6504,11 @@ PrefabInstance:
       propertyPath: GameManager
       value: 
       objectReference: {fileID: 1289270407}
+    - target: {fileID: 2496886839966412049, guid: ba797213863c833439b4ac44f5177b65,
+        type: 3}
+      propertyPath: verticalFinishCollider
+      value: 
+      objectReference: {fileID: 412318941}
     - target: {fileID: 2496886839966412050, guid: ba797213863c833439b4ac44f5177b65,
         type: 3}
       propertyPath: m_Name
@@ -6671,6 +6741,11 @@ PrefabInstance:
       propertyPath: GameManager
       value: 
       objectReference: {fileID: 1289270407}
+    - target: {fileID: 2496886839966412049, guid: ba797213863c833439b4ac44f5177b65,
+        type: 3}
+      propertyPath: verticalFinishCollider
+      value: 
+      objectReference: {fileID: 412318941}
     - target: {fileID: 2496886839966412050, guid: ba797213863c833439b4ac44f5177b65,
         type: 3}
       propertyPath: m_Name
@@ -34019,6 +34094,11 @@ PrefabInstance:
       propertyPath: GameManager
       value: 
       objectReference: {fileID: 1289270407}
+    - target: {fileID: 5552968500020738794, guid: 48bce8028648d9140b3a1a9d6e84df9b,
+        type: 3}
+      propertyPath: verticalFinishCollider
+      value: 
+      objectReference: {fileID: 412318941}
     - target: {fileID: 5552968500020738798, guid: 48bce8028648d9140b3a1a9d6e84df9b,
         type: 3}
       propertyPath: m_LocalPosition.x
